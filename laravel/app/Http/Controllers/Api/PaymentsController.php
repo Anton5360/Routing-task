@@ -4,17 +4,18 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Payments\Components\AbstractPayment;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 class PaymentsController extends Controller
 {
     /**
-     * Make a payment by Apple Pay
+     * Make a payment by any payment system
+     * @param AbstractPayment $payment
      * @return Response
      */
-    public function store(): Response
+    public function store(AbstractPayment $payment): Response
     {
-
+        $payment->createSession();
+        // do other things
     }
 }
