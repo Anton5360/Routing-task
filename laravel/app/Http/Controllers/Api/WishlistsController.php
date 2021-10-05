@@ -10,9 +10,10 @@ class WishlistsController extends Controller
 {
     /**
      * Add product to a wishlist
+     * @param Request $request
      * @return Response
      */
-    public function store(): Response
+    public function store(Request $request): Response
     {
         //
     }
