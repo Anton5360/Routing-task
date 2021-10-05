@@ -6,13 +6,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class ProductCoverController extends Controller
+class WishlistsController extends Controller
 {
     /**
-     * Change product cover image
+     * Add product to a wishlist
      * @return Response
      */
-    public function update(): Response
+    public function store(): Response
     {
         //
     }

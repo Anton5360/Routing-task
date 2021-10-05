@@ -3,19 +3,18 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Payments\Components\AbstractPayment;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class ProductOrderController extends Controller
+class PaymentsController extends Controller
 {
-
     /**
-     * Order a product
-     * @param Request $request
+     * Make a payment by Apple Pay
      * @return Response
      */
-    public function store(Request $request): Response
+    public function store(): Response
     {
-        //
+
     }
 }

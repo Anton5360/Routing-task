@@ -6,28 +6,15 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class ProductController extends Controller
+class ProductOrdersController extends Controller
 {
 
     /**
-     * Create a new product
-     *
+     * Order a product
      * @param Request $request
      * @return Response
      */
     public function store(Request $request): Response
-    {
-        //
-    }
-
-
-    /**
-     * Delete some product
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function destroy(int $id): Response
     {
         //
     }

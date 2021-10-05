@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use GuzzleHttp\Psr7\Response;
 use Illuminate\Http\Request;
 
-class ProductReviewController extends Controller
+class ProductReviewsController extends Controller
 {
     /**
      * Get the list of all products reviews

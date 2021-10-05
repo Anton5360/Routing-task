@@ -6,14 +6,15 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class ProductPaymentApplePayController extends Controller
+class ProductCoverImageController extends Controller
 {
     /**
-     * Make a payment by Apple Pay
+     * Change product cover image
+     * @param int $id
      * @return Response
      */
-    public function store(): Response
+    public function update(int $id): Response
     {
-
+        //
     }
 }
