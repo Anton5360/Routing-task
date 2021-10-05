@@ -41,6 +41,7 @@ Route::middleware('auth:sanctum')->group(function() {
     Route::resource('product/cover', ProductCoverController::class)->only('update');
 
     Route::post('/wishlists', [WishlistsController::class, 'store']);
+    Route::put('/products/{id}/cover-image', [ProductCoverImageController::class, 'update']);
 
     Route::resource('payment/apple-pay', ProductPaymentApplePayController::class)->only('store');
     Route::resource('payment/stripe', ProductPaymentStripeController::class)->only('store');
