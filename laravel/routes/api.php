@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['auth:sanctum', 'isAdmin'])->group(function() {
-    Route::resource('product', ProductController::class)->only([
+    Route::resource('products', ProductsController::class)->only([
         'store', 'destroy'
     ]);
 });
