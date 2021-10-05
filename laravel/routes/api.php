@@ -38,7 +38,8 @@ Route::middleware('auth:sanctum')->group(function() {
         'store', 'destroy'
     ]);
 
-    Route::resource('product/wishlist', ProductWishlistController::class)->only('store');
+    Route::post('/reviews/{id}/like', [LikeReviewsController::class, 'store']);
+    Route::delete('/reviews/{id}/like', [LikeReviewsController::class, 'destroy']);
 
     Route::resource('product/cover', ProductCoverController::class)->only('update');
 
