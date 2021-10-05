@@ -34,15 +34,13 @@ Route::middleware('auth:sanctum')->group(function() {
         'index', 'store'
     ]);
 
-    Route::resource('product/review/like', ProductReviewLikeController::class)->only([
-        'store', 'destroy'
-    ]);
 
     Route::post('/reviews/{id}/like', [LikeReviewsController::class, 'store']);
     Route::delete('/reviews/{id}/like', [LikeReviewsController::class, 'destroy']);
 
     Route::resource('product/cover', ProductCoverController::class)->only('update');
 
+    Route::post('/wishlists', [WishlistsController::class, 'store']);
 
     Route::resource('payment/apple-pay', ProductPaymentApplePayController::class)->only('store');
     Route::resource('payment/stripe', ProductPaymentStripeController::class)->only('store');
