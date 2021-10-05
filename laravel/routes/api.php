@@ -1,14 +1,12 @@
 <?php
 
-use App\Http\Controllers\Api\ProductController;
-use App\Http\Controllers\Api\ProductCoverController;
-use App\Http\Controllers\Api\ProductReviewLikeController;
-use App\Http\Controllers\Api\ProductOrderController;
-use App\Http\Controllers\Api\ProductPaymentApplePayController;
-use App\Http\Controllers\Api\ProductPaymentPayPalController;
-use App\Http\Controllers\Api\ProductPaymentStripeController;
-use App\Http\Controllers\Api\ProductReviewController;
-use App\Http\Controllers\Api\ProductWishlistController;
+use App\Http\Controllers\Api\ProductsController;
+use App\Http\Controllers\Api\ProductCoverImageController;
+use App\Http\Controllers\Api\LikeReviewsController;
+use App\Http\Controllers\Api\ProductOrdersController;
+use App\Http\Controllers\Api\PaymentsController;
+use App\Http\Controllers\Api\ProductReviewsController;
+use App\Http\Controllers\Api\WishlistsController;
 use Illuminate\Support\Facades\Route;
 
 /*
