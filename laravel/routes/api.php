@@ -30,7 +30,7 @@ Route::middleware('auth:sanctum')->group(function() {
 
     Route::post('/products/{id}/orders', [ProductOrdersController::class, 'store']);
 
-    Route::resource('product/review', ProductReviewController::class)->only([
+    Route::resource('products.reviews', ProductReviewsController::class)->shallow()->only([
         'index', 'store'
     ]);
 
